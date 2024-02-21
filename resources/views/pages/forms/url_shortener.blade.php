@@ -87,9 +87,9 @@ URL Shortener
                         <thead class="table-light">
                             <tr>
                                 <th width="5%">SN</th>
-                                <th width="15%">Name</th>
-                                <th width="30%">Original URL</th>
-                                <th width="30%">Short URL</th>
+                                <th width="10%">Name</th>
+                                <th width="25%">Original URL</th>
+                                <th width="25%">Short URL</th>
                                 <th width="10%">Clicks</th>
                                 <th width="10%">Action</th>
                             </tr>
@@ -99,10 +99,16 @@ URL Shortener
                             $counter = 1;
                             @endphp
                             @foreach ($url_shorteners as $url_shortener)
+
+                            @php
+                            // Check if the logged-in user is the creator of the project
+                            $isCreator = auth()->user()->id === $url_shortener->created_by
+                            @endphp
+                            @if ($isCreator)
                             <tr>
                                 <td>{{ $counter++ }}</td>
                                 <td>{{ $url_shortener->name }}</td>
-                                <td>{{ $url_shortener->original_url }}</td>
+                                <td><a href="{{ $url_shortener->original_url }}">{{ $url_shortener->original_url }}</a></td>
                                 <td><a href="{{ route('short_url.redirect', $url_shortener->short_url) }}">{{ route('short_url.redirect', $url_shortener->short_url) }}</a></td>
                                 <td>{{ $url_shortener->click_count }}</td>
                                 <td>
@@ -111,6 +117,7 @@ URL Shortener
                                     <a href="{{ route('delete_url_shortener', Crypt::encrypt($url_shortener->id)) }}" class="btn btn-sm btn-danger" title="Delete" onclick="return confirm('Are you sure you want to delete?')"><i class="fa fa-trash"></i></a>
                                 </td>
                             </tr>
+                            @endif
                             @endforeach
                         </tbody>
                     </table>

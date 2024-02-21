@@ -61,6 +61,10 @@ class UrlShortenerController extends Controller
     {
         $id = Crypt::decrypt($id);
         $url_shorteners_info = UrlShortener::findOrFail($id);
+        // Check if the logged-in user is the creator of the URL
+        if ($url_shorteners_info->created_by !== Auth::id()) {
+            abort(403, 'Unauthorized action.');
+        }
         return view('pages.forms.edit_url_shortener', compact('url_shorteners_info'));
     }
 
@@ -68,6 +72,13 @@ class UrlShortenerController extends Controller
     public function UpdateUrlShortener(Request $request)
     {
         $id = Crypt::decrypt($request->id);
+
+        $urlShortener = UrlShortener::findOrFail($id);
+
+        // Check if the logged-in user is the creator of the URL
+        if ($urlShortener->created_by !== Auth::id()) {
+            abort(403, 'Unauthorized action.');
+        }
 
         $request->validate([
             'name' => 'required|unique:url_shorteners,name,' . $id,
@@ -94,11 +105,17 @@ class UrlShortenerController extends Controller
         return redirect()->route('url_shortener')->with('message', 'Updated Successfully.');
     }
 
-
     // Delete a URL shortener
     public function DeleteUrlShortener($id)
     {
         $decryptedId = Crypt::decrypt($id);
+
+        $urlShortener = UrlShortener::findOrFail($id);
+        // Check if the logged-in user is the creator of the URL
+        if ($urlShortener->created_by !== Auth::id()) {
+            abort(403, 'Unauthorized action.');
+        }
+
         UrlShortener::findOrFail($decryptedId)->delete();
         return redirect()->route('url_shortener')->with('message', 'Deleted Successfully.');
     }
