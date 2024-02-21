@@ -1,0 +1,134 @@
+	/*
+  
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-style: normal;
+}
+
+.flaticon-call:before { content: "\f100"; }
+.flaticon-email:before { content: "\f101"; }
+.flaticon-placeholder:before { content: "\f102"; }
+.flaticon-chemistry:before { content: "\f103"; }
+.flaticon-three-test-tubes:before { content: "\f104"; }
+.flaticon-microscope:before { content: "\f105"; }
+.flaticon-microscope-1:before { content: "\f106"; }
+.flaticon-flasks:before { content: "\f107"; }
+.flaticon-laboratory:before { content: "\f108"; }
+.flaticon-syringe:before { content: "\f109"; }
+.flaticon-microscope-side-view:before { content: "\f10a"; }
+.flaticon-microscopes:before { content: "\f10b"; }
+.flaticon-magnifier:before { content: "\f10c"; }
+.flaticon-flask:before { content: "\f10d"; }
+.flaticon-flask-1:before { content: "\f10e"; }
+.flaticon-plasma-ball:before { content: "\f10f"; }
+.flaticon-microscope-2:before { content: "\f110"; }
+.flaticon-medical-url_shorteners:before { content: "\f111"; }
+.flaticon-healthcare-and-medical:before { content: "\f112"; }
+.flaticon-flasks-1:before { content: "\f113"; }
+.flaticon-volumetric:before { content: "\f114"; }
+.flaticon-research:before { content: "\f115"; }
+.flaticon-scientist:before { content: "\f116"; }
+.flaticon-lab:before { content: "\f117"; }
+.flaticon-biology:before { content: "\f118"; }
+.flaticon-research-1:before { content: "\f119"; }
+.flaticon-laboratory-1:before { content: "\f11a"; }
+.flaticon-scientist-1:before { content: "\f11b"; }
+.flaticon-healthcare-and-medical-1:before { content: "\f11c"; }
+.flaticon-research-2:before { content: "\f11d"; }
+.flaticon-research-3:before { content: "\f11e"; }
+.flaticon-pigment:before { content: "\f11f"; }
+.flaticon-laboratory-2:before { content: "\f120"; }
+.flaticon-research-4:before { content: "\f121"; }
+.flaticon-dropper:before { content: "\f122"; }
+.flaticon-microscope-3:before { content: "\f123"; }
+.flaticon-dna:before { content: "\f124"; }
+.flaticon-research-5:before { content: "\f125"; }
+.flaticon-flask-2:before { content: "\f126"; }
+.flaticon-lab-1:before { content: "\f127"; }
+.flaticon-bacteria:before { content: "\f128"; }
+.flaticon-gene:before { content: "\f129"; }
+.flaticon-scientist-2:before { content: "\f12a"; }
+.flaticon-flask-3:before { content: "\f12b"; }
+.flaticon-leaf:before { content: "\f12c"; }
+.flaticon-lab-2:before { content: "\f12d"; }
+.flaticon-bacteria-1:before { content: "\f12e"; }
+.flaticon-research-6:before { content: "\f12f"; }
+.flaticon-bacteria-2:before { content: "\f130"; }
+.flaticon-lab-3:before { content: "\f131"; }
+.flaticon-laboratory-3:before { content: "\f132"; }
+.flaticon-compound:before { content: "\f133"; }
+.flaticon-lab-4:before { content: "\f134"; }
+.flaticon-scientist-3:before { content: "\f135"; }
+.flaticon-medicine:before { content: "\f136"; }
+.flaticon-lab-5:before { content: "\f137"; }
+.flaticon-lab-6:before { content: "\f138"; }
+.flaticon-research-7:before { content: "\f139"; }
+.flaticon-bacteria-3:before { content: "\f13a"; }
+.flaticon-lab-7:before { content: "\f13b"; }
+.flaticon-bacteria-4:before { content: "\f13c"; }
+.flaticon-cell:before { content: "\f13d"; }
+.flaticon-cell-1:before { content: "\f13e"; }
+.flaticon-research-8:before { content: "\f13f"; }
+.flaticon-lab-8:before { content: "\f140"; }
+.flaticon-robot:before { content: "\f141"; }
+.flaticon-test:before { content: "\f142"; }
+.flaticon-lab-9:before { content: "\f143"; }
+.flaticon-whatsapp-logo-variant:before { content: "\f144"; }
+.flaticon-skype:before { content: "\f145"; }
+.flaticon-24-hours:before { content: "\f146"; }
+.flaticon-support:before { content: "\f147"; }
+.flaticon-mail:before { content: "\f148"; }
+.flaticon-mail-1:before { content: "\f149"; }
+.flaticon-mail-2:before { content: "\f14a"; }
+.flaticon-letter:before { content: "\f14b"; }
+.flaticon-worldwide:before { content: "\f14c"; }
+.flaticon-clock:before { content: "\f14d"; }
+.flaticon-passage-of-time:before { content: "\f14e"; }
+.flaticon-ambulance:before { content: "\f14f"; }
+.flaticon-van:before { content: "\f150"; }
+.flaticon-hospital:before { content: "\f151"; }
+.flaticon-heartbeat:before { content: "\f152"; }
+.flaticon-medical-history:before { content: "\f153"; }
+.flaticon-charity:before { content: "\f154"; }
+.flaticon-charity-1:before { content: "\f155"; }
+.flaticon-appointment-book:before { content: "\f156"; }
+.flaticon-checkup:before { content: "\f157"; }
+.flaticon-blood:before { content: "\f158"; }
+.flaticon-test-tube:before { content: "\f159"; }
+.flaticon-microscope-4:before { content: "\f15a"; }
+.flaticon-microscope-5:before { content: "\f15b"; }
+.flaticon-research-9:before { content: "\f15c"; }
+.flaticon-research-10:before { content: "\f15d"; }
+.flaticon-research-11:before { content: "\f15e"; }
+.flaticon-research-12:before { content: "\f15f"; }
+.flaticon-research-13:before { content: "\f160"; }
+.flaticon-lab-10:before { content: "\f161"; }
+.flaticon-rat:before { content: "\f162"; }
+.flaticon-research-14:before { content: "\f163"; }
+.flaticon-research-15:before { content: "\f164"; }
+.flaticon-research-16:before { content: "\f165"; }
+.flaticon-research-17:before { content: "\f166"; }
+.flaticon-flask-4:before { content: "\f167"; }
+.flaticon-lab-11:before { content: "\f168"; }
